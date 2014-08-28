@@ -1,0 +1,35 @@
+{
+  "name": "ember-components",
+  "namespace": "ember-components",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "rm -rf dist; broccoli build dist"
+  },
+  "devDependencies": {
+    "bower": "~1.3.9",
+    "testem": "~0.6.18",
+    "grunt": "~0.4.5",
+    "grunt-contrib-testem": "~0.5.16",
+    "grunt-es6-module-transpiler": "~0.6.0",
+    "grunt-ember-templates": "~0.4.21",
+    "ember-template-compiler": "~1.6.1",
+    "load-grunt-tasks": "~0.6.0",
+    "load-grunt-config": "~0.13.1",
+    "shelljs": "~0.3.0",
+    "handlebars": "~1.3.0",
+    "grunt-contrib-concat": "~0.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Omar Estrella <omarestrella@bitcreative.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

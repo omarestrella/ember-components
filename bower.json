@@ -1,0 +1,21 @@
+{
+  "name": "ember-components",
+  "version": "0.1.0",
+  "description": "stuff",
+  "homepage": "none",
+  "authors": [
+    "Omar Estrella <omarestrella@bitcreative.net>"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "ignore": [],
+  "dependencies": {
+    "ember": "~1.7.0"
+  },
+  "devDependencies": {
+    "ember-qunit": "0.1.8",
+    "ember-resolver": "~0.1.7",
+    "loader": "stefanpenner/loader.js#1.0.1",
+    "qunit": "~1.15.0"
+  }
+}
