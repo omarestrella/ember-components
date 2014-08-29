@@ -1,9 +1,11 @@
 import { equal } from 'qunit';
 import { test, moduleForComponent } from 'ember-qunit';
 
-moduleForComponent('dropdown-menu');
+moduleForComponent('dropdown-menu', 'DropdownMenuComponent', {
+    needs: ['component:dropdown-menu-item']
+});
 
-test('testing title renders correctly', function () {
+test('renders default or custom title', function () {
     var component = this.subject();
 
     Ember.run(function () {
@@ -17,4 +19,19 @@ test('testing title renders correctly', function () {
     });
 
     equal(this.$('.title').text().trim(), 'Select Item');
+});
+
+test('renders list through yield', function () {
+    var component = this.subject({
+        template: Ember.Handlebars.compile(
+            '{{#dropdown-menu}}' +
+                '<li>First Menu Item</li>' +
+                '<li>Second Menu Item' +
+            '{{/dropdown-menu}}'
+        )
+    });
+
+    var $component = this.append();
+
+    equal($component.find('li').length, 2);
 });
