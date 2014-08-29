@@ -29,5 +29,10 @@ module.exports = function (grunt) {
         'testem:run:basic'
     ]);
 
+    this.registerTask('default', [
+        'build',
+        'watch'
+    ]);
+
     grunt.initConfig(config);
 };
